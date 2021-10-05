@@ -1,9 +1,11 @@
 import React from "react";
-
+import Navbar from "../components/Navbar/Navbar.components";
+import HeroCarousal from "../components/HeroCarousal/HeroCarousal.components";
 const DefaultLayout = (props) => {
   return (
     <>
-      <h1 className="text-xl">Default Layout</h1>
+      <Navbar/>
+      <HeroCarousal/>
       {props.children}
     </>
   );

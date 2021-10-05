@@ -1,25 +1,28 @@
-import { Route } from "react-router-dom";
 
 // HOC
 import DefaultHOC from "./HOC/Default.HOC";
 
+// Import css files
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+
 // Components
-import Temp from "./components/temp";
-function Name() {
-  return  <h1>Hello</h1>
-}
-function Name2() {
-  return  <h1>Hello Movie</h1>
-}
-function App() {
+import HomePage from "./Home.page.jsx/Home.page";
+function App () {
 return (
-  <>
-    <Route path="/" component={Name} />
-    <Route path="/movie" component={Name2} />
-  </>
+<>
+<DefaultHOC path= "/" exact component= {HomePage} />
+</>
+
+
+
+
 
 )
 }
+
+
 export default App;
 
 // Props - A  data that is being passed from one component to another
