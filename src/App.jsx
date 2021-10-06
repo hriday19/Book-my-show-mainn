@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 // Components
-import HomePage from "./Home.page.jsx/Home.page";
+import HomePage from "./Page/Home.page";
 function App () {
 return (
 <>
