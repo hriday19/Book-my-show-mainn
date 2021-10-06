@@ -1,6 +1,8 @@
 import React from "react";
 import EntertainmentCardSlider from "../components/Entertainment/Entertainmentcard.component";
-import Premier from "../components/Premier/Premier.component";
+import TempPosters from  "../config/TempPosters.config";
+import PosterSlider from "../components/PosterSlider/PosterSlider.components"
+
 const HomePage = () => {
     return(
         <>
@@ -23,11 +25,60 @@ const HomePage = () => {
                 className="w-full h-full"
                 />
           </div>
-          <Premier/>
+          <PosterSlider images={TempPosters} 
+          title="Premieres" 
+          isDark={true}
+          subtitle= "Brand New Releases Every Friday"/>
+          
           </div>
         </div>
           </div>
+          
+          <div 
+          className="container mx-auto px-4 my-8">
+          <PosterSlider
+           images={TempPosters} 
+          title="Online Streaming Events" 
+          isDark={false}
+          subtitle= "Brand New Releases Every Friday"/>       
+         </div>
+
+         <div 
+          className="container mx-auto px-4 my-8">
+          <PosterSlider
+           images={TempPosters} 
+          title="Outdoor Events" 
+          isDark={false}
+          subtitle= ""/>       
+         </div>
+         
+         <div 
+          className="container mx-auto px-4 my-8">
+          <PosterSlider
+           images={TempPosters} 
+          title="Laughter Therapy" 
+          isDark={false}
+          subtitle= ""/>       
+         </div>
+
+         <div 
+          className="container mx-auto px-4 my-8">
+          <PosterSlider
+           images={TempPosters} 
+          title="Popular Events" 
+          isDark={false}
+          subtitle= ""/>       
+         </div>
+         <div 
+          className="container mx-auto px-4 my-8">
+          <PosterSlider
+           images={TempPosters} 
+          title="Top Games & Sport Events" 
+          isDark={false}
+          subtitle= ""/>       
+         </div>
             </>
+        
   )
     }
 export default HomePage;

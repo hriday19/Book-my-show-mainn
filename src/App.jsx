@@ -5,6 +5,8 @@ import DefaultHOC from "./HOC/Default.HOC";
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+//Pages
+import Movie  from "./Page/Movie.page";
 
 
 // Components
@@ -13,14 +15,10 @@ function App () {
 return (
 <>
 <DefaultHOC path= "/" exact component= {HomePage} />
+<DefaultHOC parth= "/"exact component={Movie} />
 </>
-
-
-
-
-
-)
-}
+);
+};
 
 
 export default App;
