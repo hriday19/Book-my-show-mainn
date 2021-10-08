@@ -5,6 +5,7 @@ import PosterCarouselSettings from "../../config/PosterCarousel.config";
 import Slider from 'react-slick';
 
 const PosterSlider = (props) => {
+  const sliderConfig = props.config ? props.config: PosterCarouselSettings;
   return (
     <>
       <div className="flex flex-col items-start my-2">
